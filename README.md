@@ -1,16 +1,16 @@
-# Video-BLADE: Block-Sparse Attention Meets Step Distillation for Efficient Video Generation
+# BLADE: Block-Sparse Attention Meets Step Distillation for Efficient Video Generation
 
 <div align="center">
 
-[📖 Paper](https://arxiv.org/abs/2508.10774) | [🚀 Homepage](http://ziplab.co/BLADE-Homepage/) | [💾 Models](https://huggingface.co/GYP666/VIDEO-BLADE) | [📖 中文阅读](README_zh.md)  
+[📖 Paper](https://arxiv.org/abs/2508.10774) | [🚀 Homepage](http://ziplab.co/BLADE-Homepage/) | [💾 Models](https://huggingface.co/GYP666/BLADE) | [📖 中文阅读](README_zh.md)  
 
 </div>
 
-Video-BLADE is a data-free framework for efficient video generation. By jointly training an adaptive sparse attention mechanism with a step distillation technique, it achieves a significant acceleration in video generation models. This project combines a block-sparse attention mechanism with step distillation, reducing the number of inference steps from 50 to just 8 while maintaining high-quality generation.
+BLADE is a data-free framework for efficient video generation. By jointly training an adaptive sparse attention mechanism with a step distillation technique, it achieves a significant acceleration in video generation models. This project combines a block-sparse attention mechanism with step distillation, reducing the number of inference steps from 50 to just 8 while maintaining high-quality generation.
 
 ## 📢 News
 
-  - **[Aug 2025]** 🎉 The code and pre-trained models for Video-BLADE have been released\!
+  - **[Aug 2025]** 🎉 The code and pre-trained models for BLADE have been released\!
   - **[Aug 2025]** 📝 Support for two mainstream video generation models, CogVideoX-5B and WanX-1.3B, is now available.
   - **[Aug 2025]** ⚡ Achieved high-quality video generation in just 8 steps, a significant speedup compared to the 50-step baseline.
 
@@ -35,8 +35,8 @@ Video-BLADE is a data-free framework for efficient video generation. By jointly 
 1.  **Clone the repository**
 
     ```bash
-    git clone https://github.com/Tacossp/VIDEO-BLADE
-    cd VIDEO-BLADE
+    git clone https://github.com/ziplab/BLADE.git
+    cd BLADE
     ```
 
 2.  **Install dependencies**
@@ -81,13 +81,13 @@ Please download the following base model weights and place them in the specified
     git clone https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers wanx/wan1.3b
     ```
 
-### Pre-trained Video-BLADE Weights
+### Pre-trained BLADE Weights
 
-We provide pre-trained weights for Video-BLADE:
+We provide pre-trained weights for BLADE:
 
 ```bash
 # Download pre-trained weights
-git clone https://huggingface.co/GYP666/VIDEO-BLADE pretrained_weights
+git clone https://huggingface.co/GYP666/BLADE pretrained_weights
 ```
 
 ### Weight Directory Structure
@@ -95,12 +95,12 @@ git clone https://huggingface.co/GYP666/VIDEO-BLADE pretrained_weights
 Ensure your directory structure for weights is as follows:
 
 ```
-VIDEO-BLADE/
+BLADE/
 ├── cogvideox/
 │   └── CogVideoX-5b/           # Base model weights for CogVideoX
 ├── wanx/
 │   └── wan1.3b/               # Base model weights for WanX
-└── pretrained_weights/         # Pre-trained weights for Video-BLADE
+└── pretrained_weights/         # Pre-trained weights for BLADE
     ├── BLADE_cogvideox_weight/
     └── BLADE_wanx_weight/
 ```
@@ -216,7 +216,7 @@ bash train_wanx_tdm.sh
 ## 📊 Project Structure
 
 ```
-VIDEO-BLADE/
+BLADE/
 ├── README.md                   # Project documentation
 ├── requirements.txt           # List of Python dependencies
 │
@@ -263,11 +263,11 @@ VIDEO-BLADE/
 
 ## 📄 Citation
 
-If you use Video-BLADE in your research, please cite our work:
+If you use BLADE in your research, please cite our work:
 
 ```bibtex
 @misc{gu2025videobladeblocksparseattentionmeets,
-    title={Video-BLADE: Block-Sparse Attention Meets Step Distillation for Efficient Video Generation},
+    title={BLADE: Block-Sparse Attention Meets Step Distillation for Efficient Video Generation},
     author={Youping Gu and Xiaolong Li and Yuhao Hu and Bohan Zhuang},
     year={2025},
     eprint={2508.10774},
@@ -282,4 +282,4 @@ If you use Video-BLADE in your research, please cite our work:
 For any questions or suggestions, feel free to:
 
   - Contact Youping Gu at youpgu71@gmail.com.
-  - Submit an issue on our [Github page](https://github.com/ziplab/VIDEO-BLADE/issues).
+  - Submit an issue on our [Github page](https://github.com/ziplab/BLADE/issues).
