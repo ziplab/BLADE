@@ -257,14 +257,14 @@ BLADE/
 如果您在研究中使用了BLADE，请引用我们的工作：
 
 ```bibtex
-@misc{gu2025videobladeblocksparseattentionmeets,
-    title={BLADE: Block-Sparse Attention Meets Step Distillation for Efficient Video Generation},
-    author={Youping Gu and Xiaolong Li and Yuhao Hu and Bohan Zhuang},
-    year={2025},
-    eprint={2508.10774},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV},
-    url={https://arxiv.org/abs/2508.10774},
+@misc{gu2025bladeblocksparseattentionmeets,
+      title={BLADE: Block-Sparse Attention Meets Step Distillation for Efficient Video Generation}, 
+      author={Youping Gu and Xiaolong Li and Yuhao Hu and Minqi Chen and Bohan Zhuang},
+      year={2025},
+      eprint={2508.10774},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2508.10774}, 
 }
 ```
 
