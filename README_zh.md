@@ -1,16 +1,16 @@
-# Video-BLADE: Block-Sparse Attention Meets Step Distillation for Efficient Video Generation
+# BLADE: Block-Sparse Attention Meets Step Distillation for Efficient Video Generation
 
 <div align="center">
 
-[📖 Paper](https://arxiv.org/abs/2508.10774) |  [🚀 Homepage](http://ziplab.co/BLADE-Homepage/) | [💾 Models](https://huggingface.co/GYP666/VIDEO-BLADE)
+[📖 Paper](https://arxiv.org/abs/2508.10774) |  [🚀 Homepage](http://ziplab.co/BLADE-Homepage/) | [💾 Models](https://huggingface.co/GYP666/BLADE)
 
 </div>
 
-Video-BLADE是一个无需视频数据训练的高效视频生成框架，通过联合训练自适应稀疏注意力和步数蒸馏技术，实现了视频生成模型的显著加速。该项目实现了块稀疏注意力机制与步数蒸馏技术的结合，在保持生成质量的同时将推理步数从50步降低到8步。
+BLADE是一个无需视频数据训练的高效视频生成框架，通过联合训练自适应稀疏注意力和步数蒸馏技术，实现了视频生成模型的显著加速。该项目实现了块稀疏注意力机制与步数蒸馏技术的结合，在保持生成质量的同时将推理步数从50步降低到8步。
 
 ## 📢 News
 
-- **[2025-08]** 🎉 Video-BLADE代码和预训练模型发布！
+- **[2025-08]** 🎉 BLADE代码和预训练模型发布！
 - **[2025-08]** 📝 支持CogVideoX-5B和WanX-1.3B两种主流视频生成模型
 - **[2025-08]** ⚡ 实现8步高质量视频生成，相比50步baseline显著提速
 
@@ -34,8 +34,8 @@ Video-BLADE是一个无需视频数据训练的高效视频生成框架，通过
 
 1. **克隆仓库**
 ```bash
-git clone https://github.com/Tacossp/VIDEO-BLADE
-cd VIDEO-BLADE
+git clone https://github.com/ziplab/BLADE.git
+cd BLADE
 ```
 
 2. **安装依赖包**
@@ -76,27 +76,27 @@ git clone https://huggingface.co/zai-org/CogVideoX-5b cogvideox/CogVideoX-5b
 git clone https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers wanx/wan1.3b
 ```
 
-### 预训练的Video-BLADE权重
+### 预训练的BLADE权重
 
-我们提供了已经训练好的Video-BLADE权重：
+我们提供了已经训练好的BLADE权重：
 
 ```bash
 # 下载预训练权重
-git clone https://huggingface.co/GYP666/VIDEO-BLADE pretrained_weights
+git clone https://huggingface.co/GYP666/BLADE pretrained_weights
 ```
 
 ### 权重目录结构
 
 确保您的权重目录结构如下：
 ```
-VIDEO-BLADE/
+BLADE/
 ├── cogvideox/
 │   └── CogVideoX-5b/           # CogVideoX基础模型权重
 ├── wanx/
 │   └── wan1.3b/               # WanX基础模型权重
-└── pretrained_weights/         # Video-BLADE预训练权重
+└── pretrained_weights/         # BLADE预训练权重
     ├── BLADE_cogvideox_weight/
-    └── BLADe_wanx_weight/
+    └── BLADE_wanx_weight/
 ```
 
 ## 🚀 快速开始 - 推理使用
@@ -206,7 +206,7 @@ bash train_wanx_tdm.sh
 ## 📊 项目结构
 
 ```
-VIDEO-BLADE/
+BLADE/
 ├── README.md                   # 项目说明文档
 ├── requirements.txt           # Python依赖列表
 │
@@ -254,11 +254,11 @@ VIDEO-BLADE/
 
 ## 📄 引用
 
-如果您在研究中使用了Video-BLADE，请引用我们的工作：
+如果您在研究中使用了BLADE，请引用我们的工作：
 
 ```bibtex
 @misc{gu2025videobladeblocksparseattentionmeets,
-    title={Video-BLADE: Block-Sparse Attention Meets Step Distillation for Efficient Video Generation},
+    title={BLADE: Block-Sparse Attention Meets Step Distillation for Efficient Video Generation},
     author={Youping Gu and Xiaolong Li and Yuhao Hu and Bohan Zhuang},
     year={2025},
     eprint={2508.10774},
@@ -272,4 +272,4 @@ VIDEO-BLADE/
 
 如有问题或建议，欢迎：
 - Please contact Youping Gu (youpgu71@gmail.com) if you have any questions about this work.
-- 提交issue: [Github issue](https://github.com/ziplab/VIDEO-BLADE/issues)
+- 提交issue: [Github issue](https://github.com/ziplab/BLADE/issues)
