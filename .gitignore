@@ -64,3 +64,43 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+
+# BEGIN dense release ignores
+# Local credentials and agent configuration
+.env
+.env.*
+!.env.example
+.envrc
+AGENTS.md
+CLAUDE.md
+.claude/
+.codex/
+.serena/
+.idea/
+.vscode/
+
+# Generated files and local environments
+**/.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv*/
+*.egg-info/
+build/
+dist/
+outputs/
+models/
+downloads/
+*.wav
+*.zip
+*.tar
+*.tar.gz
+
+# Historical model directories
+legacy/cogvideox/CogVideoX-5b/
+legacy/cogvideox/prompts/
+legacy/wanx/wan1.3b/
+legacy/wanx/wan14b/
+legacy/wanx/prompts/
+# END dense release ignores

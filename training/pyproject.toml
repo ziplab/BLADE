@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "video-blade"
+version = "0.2.0"
+description = "BLADE video distillation with portable dense Wan and H3 training"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.9.1,<2.10",
+    "diffusers>=0.41.0,<0.42",
+    "transformers>=5.20.1,<6",
+    "peft>=0.21.2,<0.22",
+    "accelerate>=1.15.0,<2",
+    "huggingface-hub>=1.32.0,<2",
+    "tokenizers>=0.23.1,<0.24",
+    "safetensors>=0.8.0,<0.9",
+    "sentencepiece>=0.2,<0.3",
+    "ftfy>=6.3,<7",
+    "imageio>=2.37,<3",
+    "imageio-ffmpeg>=0.6,<0.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.14,<1"]
+fa4 = ["flash-attn-4[cu13]==4.0.0b35"]
+
+[project.scripts]
+video-blade = "video_blade.__main__:main"
+
+[project.urls]
+Repository = "https://github.com/ziplab/BLADE"
+
+[tool.setuptools.packages.find]
+include = ["video_blade*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["*_test.py"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["video_blade"]

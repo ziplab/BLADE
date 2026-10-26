@@ -1,0 +1,3 @@
+# FA4 is optional; the reference H3 configs select flash_4.
+-r dense.txt
+flash-attn-4[cu13]==4.0.0b35

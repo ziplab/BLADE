@@ -1,0 +1,13 @@
+# Portable dense training stack. Install a matching CUDA build of PyTorch first.
+torch>=2.9.1,<2.10
+diffusers==0.41.0
+transformers==5.20.1
+peft==0.21.2
+accelerate==1.15.0
+huggingface-hub==1.33.0
+tokenizers==0.23.3
+safetensors>=0.8.0,<0.9
+sentencepiece>=0.2,<0.3
+ftfy>=6.3,<7
+imageio>=2.37,<3
+imageio-ffmpeg>=0.6,<0.7
